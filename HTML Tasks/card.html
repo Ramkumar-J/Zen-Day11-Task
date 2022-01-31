@@ -1,0 +1,86 @@
+<!--7). Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mag-O-Zine Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+      body,.row{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width:100%;
+      }
+      .container{
+          background-color: rgb(247, 247, 247);
+          width:800px;
+          font-weight: bold;
+          padding-left: 20px;
+          border: 2px solid black;
+          text-align: center;
+      }
+      div > h4 > mark{
+          background-color: rgb(214, 19, 19);
+          color: rgb(255, 255, 255);
+      }
+      
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h4><mark>Yes! I want to subscribe to <strong><i>Mag-O-Zine</i></strong></mark></h4>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col-lg-6">
+            <input id="firstname" class="form-control" type="text" required>
+            <label>Firstname</label>
+          </div>
+          <div class="col-lg-6">
+            <input id="lastname" class="form-control" type="text">
+            <label>Lastname</label>
+          </div>
+        </div>
+         <div class="row">
+           <div class="col-lg-12">
+            <input id="address" class="form-control" type="text">
+            <label>Address</label> 
+          </div>
+         </div>
+         <div class="row">
+           <div class="col-lg-4">
+            <input id="state" class="form-control" type="text">
+            <label>State</label>
+           </div>
+           <div class="col-lg-4">
+            <input id="country" class="form-control" type="text">
+            <label>Country</label>
+           </div>
+           <div class="col-lg-4">
+            <input id="zip" class="form-control" type="text">
+            <label>Zip</label>
+           </div>
+         </div>
+          </div>
+      </div>
+   <div class="send-info">
+        <label>Subscribe for:</label>
+        <input type="checkbox" name="subscribe for" id="subscribe">
+        <label for="subscribe">1 year ($19.95)</label>
+        <input type="checkbox" name="subscribe for" id="subscribe">
+        <label for="subscribe">2 year ($35.00)</label><br>
+        <label>Send me more information about:</label><br>
+        <input type="checkbox" name="send me more information about" id="info">
+        <label for="info">Computer-Zine</label><br>
+        <input type="checkbox" name="send me more information about" id="info">
+        <label for="info">Fishing-Zine</label><br>
+        <input type="checkbox" name="send me more information about" id="info">
+        <label for="info">Cat-O-Zine</label>
+    </div>
+  </div>
+</body>
+</html>
